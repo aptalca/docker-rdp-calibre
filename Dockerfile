@@ -17,7 +17,6 @@ wget \
 lxde \
 xrdp && \
 echo lxsession -s LXDE -e LXDE > ~/.xsession && \
-service xrdp restart && \
 wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()" && \
 mkdir -p /etc/my_init.d && \
 mkdir -p /root/Desktop
