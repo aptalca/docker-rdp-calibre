@@ -2,7 +2,7 @@
 
 Calibre GUI & server docker for unRaid
 
-RDP-Calibre is a combo docker for calibre web server and gui (through RDP)
+RDP-Calibre is a combo docker for calibre web server and gui (through webRDP)
 
 Configuration:
 
@@ -10,8 +10,8 @@ Configuration:
 
 Don't forget to enter in the host port and app folder.
 
-8080 is the port for the calibre server web gui
+8081 is the port for the calibre server web gui
 
-3389 is the RDP port
+8080 is the WebUI (webRDP) for the Calibre desktop GUI port
 
-To access the calibre GUI, connect to the unraid IP via RDP client (user: root | password: calibre)and click on the the desktop icon for calibre. Both the server and the GUI use the same database in the /config folder.
+To access the calibre full GUI, open the WebUI in unRaid. Both the server and the GUI use the same database in the /config folder.
