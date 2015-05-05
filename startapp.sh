@@ -1,0 +1,1 @@
+calibre --with-library=/config
