@@ -3,6 +3,7 @@
 mkdir -p /config/config
 ln -s /config/config /nobody/.config/calibre
 chown -R nobody:users /config
+chmod -R g+rw /config
 
 if [ ! "$EDGE" = "1" ]; then
   echo "EDGE not requested, keeping stable version"
