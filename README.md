@@ -9,7 +9,7 @@ On unRaid, install from the Community Repositories and enter the app folder loca
 
 ##Install On Other Platforms (like Ubuntu, Synology 5.2 DSM, etc.):
 
-On other platforms, you can run this docker with the following command (by default installs the stable master):
+On other platforms, you can run this docker with the following command:
 
 ```
 docker run -d --name="RDP-Calibre" -e EDGE="0" -e WIDTH="1280" -e HEIGHT="720" -v /path/to/config:/config:rw -v /etc/localtime:/etc/localtime:ro -p XXX1:8080 -p XXX2:8081 aptalca/docker-rdp-calibre
