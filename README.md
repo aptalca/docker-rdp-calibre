@@ -36,6 +36,6 @@ If you would like to change the library location you need to do a couple of thin
 - Then add an environment variable (LIBRARYINTERNALPATH) to specify the internal library location for the webserver. Example: -e LIBRARYINTERNALPATH="/library"
 - When you fire up calibre the first time select your library location. Example: /library  
 
-####URL Prefix for reverse proxy:
+####Url Prefix for reverse proxy:
 - Add an environment variable (URLPREFIX) to docker run to specify the url prefix for the webserver. Example: -e URLPREFIX="/calibre"
 - To access the webserver, go to http://SERVERIP:YYYY/calibre
