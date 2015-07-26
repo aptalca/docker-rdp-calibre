@@ -28,3 +28,13 @@ You can access the GUI by pointing your web browser to http://SERVERIP:XXXX/#/cl
 You can access the Calibre webserver by pointing your web browser to http://SERVERIP:YYYY
 
 (Replace SERVERIP, XXXX and YYYY with your values)
+
+###Advanced Features (only for docker pros)
+####Custom library location:
+If you would like to change the library location you need to do a couple of things:
+- First add a new mount point for the library location in the docker run command. Example: -v /path/to/library:/library:rw
+- Then add an environment variable (LIBRARYINTERNALPATH) to specify the internal library location for the webserver. Example: -e LIBRARYINTERNALPATH="/library"
+- When you fire up calibre the first time select your library location. Example: /library
+####URL Prefix for reverse proxy:
+- Add an environment variable (URLPREFIX) to docker run to specify the url prefix for the webserver. Example: -e URLPREFIX="/calibre"
+- To access the webserver, go to http://SERVERIP:YYYY/calibre
