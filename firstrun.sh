@@ -16,4 +16,4 @@ if [ -z "$LIBRARYINTERNALPATH" ]; then
   LIBRARYINTERNALPATH=/config
 fi
 
-su -c 'calibre-server --with-library=$LIBRARYINTERNALPATH --port 8081 &' -s /bin/sh nobody
+/sbin/setuser nobody calibre-server --with-library=$LIBRARYINTERNALPATH --port 8081 &
