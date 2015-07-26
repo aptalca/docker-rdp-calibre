@@ -12,4 +12,8 @@ else
   wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 fi
 
-su -c "calibre-server --with-library=/config --port 8081 &" -s /bin/sh nobody
+if [ -z "$LIBRARYINTERNALPATH" ]; then
+  LIBRARYINTERNALPATH=/config
+fi
+
+/sbin/setuser nobody calibre-server --with-library=$LIBRARYINTERNALPATH --port 8081 --url-prefix=$URLPREFIX &
