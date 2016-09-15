@@ -1,6 +1,6 @@
 
 # Builds a docker gui image
-FROM hurricane/dockergui:xvnc
+FROM hurricane/dockergui:x11rdp1.3
 
 MAINTAINER aptalca
 
