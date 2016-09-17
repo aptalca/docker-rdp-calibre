@@ -41,4 +41,5 @@ If you would like to change the library location you need to do a couple of thin
 - To access the webserver, go to http://SERVERIP:YYYY/calibre
 
 ### Changelog:
+- 2016-09-16 - Remove X1-lock if exists, which prevents start up following an unclean shutdown
 - 2016-09-15 - Updated base to x11rdp1.3, which now supports clipboard through the left hand side menu (ctrl+alt+shift) - calibre updated to 2.67
