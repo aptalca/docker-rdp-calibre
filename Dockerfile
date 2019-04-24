@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu-gui
+FROM lsiobase/gui
 
 # set version label
 ARG BUILD_DATE
