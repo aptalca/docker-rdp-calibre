@@ -1,4 +1,5 @@
 #!/bin/execlineb -P
+# ./root/etc/services.d/calibre/run
 
 # Redirect stderr to stdout.
 fdmove -c 2 1
