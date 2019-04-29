@@ -1,4 +1,4 @@
-FROM lsiobase/guac
+FROM lsiobase/guacgui
 
 # set version label
 ARG BUILD_DATE
