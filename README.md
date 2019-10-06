@@ -1,3 +1,7 @@
+THIS IMAGE IS DEPRECATED. PLEASE USE THE NEW IMAGE AT `linuxserver/calibre`.  
+In the new image, you can select the folder that contains your metadata.db as the library location.
+  
+
 # Calibre GUI and Server
 
 Run the Calibre X app accessible in a web browser
